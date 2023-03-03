@@ -1,4 +1,7 @@
+      @import "../css/global.css";
+
       /* CSS*/
-      @import "../css/reset/global.css";
+      @import "../css/reset/reset.css";
+
       /* FONTS*/
       @import "../css/reset/fonts.css";
