@@ -1,10 +1,9 @@
       @import "../css/global.css";
 
-      /* CSS*/
+      /* pasta reset*/
       @import "../css/reset/reset.css";
-
-      /* FONTS*/
       @import "../css/reset/fonts.css";
+      @import "../css/reset/animations.css";
 
       /* COMPONENTES*/
       @import "../css/componentes/logo.css";
