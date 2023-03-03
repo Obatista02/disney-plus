@@ -1,2 +1,4 @@
-      /* Utilitarios*/
+      /* CSS*/
       @import "../css/reset/global.css";
+      /* FONTS*/
+      @import "../css/reset/fonts.css";
