@@ -5,3 +5,10 @@
 
       /* FONTS*/
       @import "../css/reset/fonts.css";
+
+      /* COMPONENTES*/
+      @import "../css/componentes/logo.css";
+
+      /* Layout*/
+      @import "../css/layout/header.css";
+      @import "../css/layout/navMenu.css";
