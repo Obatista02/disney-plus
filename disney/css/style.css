@@ -7,7 +7,9 @@
 
       /* COMPONENTES*/
       @import "../css/componentes/logo.css";
+      @import "../css/componentes/userProfile.css";
 
       /* Layout*/
       @import "../css/layout/header.css";
+      @import "../css/layout/userMenu.css";
       @import "../css/layout/navMenu.css";
