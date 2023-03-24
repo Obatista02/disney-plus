@@ -12,7 +12,7 @@
 <body>
   <div class="backgroud-fixed"></div>
   <div class="wrapper">
-    <header class="header">
+    <header class="header" data-header>
       <div class="logo">
         <a class="logoLink" href="./index.html"></a>
       </div>
@@ -55,7 +55,7 @@
             </a>
           </li>
           <li class="menuItem dropdown">
-            <a class="navMenuLink" href="/">
+            <a class="navMenuLink" href="/" data-open-navSubMenu>
               <i class="fa-solid fa-ellipsis-vertical"></i>
               <span class="navMenuText"></span>
             </a>
@@ -83,13 +83,14 @@
         </ul>
 
         <div class="user-menu">
+          <div class="user-menu-backgroud show-hover"></div>
           <div class="user-menu-current-profile">
             <div class="user-profile user-profile--reverse">
               <img src="../assets/imgs/avatar.png" class="user-profile-avatar">
               <span class="user-profile-title">Guilherme</span>
             </div>
           </div>
-          <ul class="user-menu-profiles">
+          <ul class="user-menu-profiles show-hover">
             <li class="user-menu-item">
               <div class="user-profile ">
                 <img src="../assets/imgs/avatar.png" class="user-profile-avatar">
@@ -115,8 +116,8 @@
               </div>
             </li>
           </ul>
-          <ul class="user-menu-options">
-            <li class="user-menu-item">
+          <ul class="user-menu-options show-hover">
+            <li class="user-menu-item ">
               <a href="/" class="user-menu-link">Editar Perfis</a>
             </li>
             <li class="user-menu-item">
@@ -136,6 +137,7 @@
       </nav>
     </header>
   </div>
+  <script type="module" src="../assets/scripts/main.js"></script>
 
 </body>
 

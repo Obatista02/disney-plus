@@ -63,12 +63,14 @@
   display: none;
 }
 
-.user-menu:hover .show-hover {
+..user-menu.active .show-hover,
+.user-menu:hover .show-hover,
+.user-menu:hover .user-profile-title {
   display: block;
 
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1100px) {
   .user-menu .user-profile-title {
     display: none;
   }

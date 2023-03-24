@@ -1,5 +1,8 @@
 .header {
+  transition: background-color .3s;
   display: flex;
+  position: fixed;
+  width: 100%;
 }
 
 .headerNav {
