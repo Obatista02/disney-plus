@@ -13,3 +13,6 @@
       @import "../css/layout/header.css";
       @import "../css/layout/userMenu.css";
       @import "../css/layout/navMenu.css";
+
+      /* Banners*/
+      @import "../css/pages/home/banners.css";

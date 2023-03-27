@@ -1,0 +1,39 @@
+.banners {
+  padding-top: 9.7rem;
+
+}
+
+.banner-slide-item {
+  margin: 0 auto;
+  width: 90vw;
+}
+
+.banner-slide-link {
+  display: block;
+  position: relative;
+}
+
+.banner-slide-link::before {
+  border: .4rem solid rgba(255, 255, 255, 0);
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: .5rem;
+  transition: 0.3s;
+}
+
+.banner-slide-link:hover::before {
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+.banner-slide-cover {
+  display: block;
+  width: 100%;
+}
+
+.banner-slide-title {
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+}

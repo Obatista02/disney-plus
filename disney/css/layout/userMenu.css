@@ -63,7 +63,7 @@
   display: none;
 }
 
-..user-menu.active .show-hover,
+.user-menu.active .show-hover,
 .user-menu:hover .show-hover,
 .user-menu:hover .user-profile-title {
   display: block;
