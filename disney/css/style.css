@@ -8,6 +8,9 @@
       /* COMPONENTES*/
       @import "../css/componentes/logo.css";
       @import "../css/componentes/userProfile.css";
+      @import "../css/componentes/arrow-slider.css";
+      @import "../css/componentes/controls-slider.css";
+
 
       /* Layout*/
       @import "../css/layout/header.css";
