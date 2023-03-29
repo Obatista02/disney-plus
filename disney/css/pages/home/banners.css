@@ -13,8 +13,17 @@
 .banner-slider-item {
   flex-shrink: 0;
   width: 90vw;
-  margin: 0 1rem 3rem;
+  padding: 0 1rem 3rem;
+  position: relative;
 
+}
+
+.banner-slider-counter {
+  font-size: 2rem;
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+  z-index: 10;
 }
 
 .banner-slider-link {
@@ -50,16 +59,20 @@
   width: 100%;
 }
 
-.banners .arrow-slider-left {
-  left: 3.6rem;
+.banners .arrow-slider {
+  margin-top: -3rem;
   position: absolute;
   z-index: 2;
 }
 
+.banners .arrow-slider-left {
+  left: 3.6rem;
+
+}
+
 .banners .arrow-slider-right {
   right: 3.6rem;
-  z-index: 2;
-  position: absolute;
+
 }
 
 .banners .controls-slider {
