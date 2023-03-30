@@ -2,6 +2,8 @@ const sliderItem = document.querySelectorAll('[data-banner="item"]')
 const slider = document.querySelector('[data-banner="slider"]')
 const btnNext = document.querySelector('[data-banner="btn-next"]')
 const btnPrevius  = document.querySelector('[data-banner="btn-previous"]')
+const btnControls = document.querySelectorAll('[data-banner="btn-control"]')
+const imgTitles = document.querySelectorAll('[data-banner="img-title"]')
 
 const state = {
     mouseDowPosition:0,
@@ -14,6 +16,25 @@ function translateSlide(position){
   state.lastTranslatePosition = position
   slider.style.transform=`translateX(${position}px)`
 }
+
+function activeControlButton(index){
+    btnControls.forEach(function(item){
+      item.classList.remove('active')
+    })
+    const btnControl = btnControls[index]
+    btnControl.classList.add('active')
+
+}
+
+function activeImageTitle(index){
+    imgTitles.forEach(function(item){
+      item.classList.remove('active')
+    })
+    const imgTitle = imgTitles[index]
+    imgTitle.classList.add('active')
+
+}
+
 function getCenterPosition(index){
   const slide = sliderItem[index]
   const margin = (document.body.clientWidth - slide.offsetWidth) / 2
@@ -48,8 +69,10 @@ function backwardSlide(){
 function setVisibleSlide(index){
   state.currentSlideIndex= index
    const position= getCenterPosition(index)
-      AnimateTransition(true)
-      translateSlide(position)
+    activeControlButton(index)
+    AnimateTransition(true)
+    activeImageTitle(index)
+    translateSlide(position)
 }
 function preventDefault(event){
     event.preventDefault()
@@ -91,10 +114,13 @@ function onMouseLeave(event){
       slide.removeEventListener('mousemove', onMouseMove)
 }
 
+function onControlButtonClick(event, index){
+    setVisibleSlide(index)
+}
+
 function setListeners(){
   btnNext.addEventListener('click', forwardSlide)
   btnPrevius.addEventListener('click', backwardSlide)
-
   sliderItem.forEach(function(slide, index){
   const link =  slide.querySelector('.banner-slider-link')
       link.addEventListener('click',preventDefault)
@@ -104,6 +130,10 @@ function setListeners(){
       })
       slide.addEventListener('mouseup',onMouseUp)
       slide.addEventListener('mouseleave',onMouseLeave)
+
+      btnControls[index].addEventListener('click', function(event) {
+        onControlButtonClick(event, index)
+      })
       
     })
 }
