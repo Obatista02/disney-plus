@@ -23,7 +23,6 @@
   position: absolute;
   top: 4rem;
   left: 4rem;
-  z-index: 10;
 }
 
 .banner-slider-link {
@@ -53,6 +52,7 @@
 }
 
 .banner-slider-title {
+  animation: slideLeft 2s;
   left: 0;
   top: 0;
   display: none;
@@ -60,7 +60,7 @@
   width: 100%;
 }
 
-.banner-slider-title .active {
+.banner-slider-title.active {
   display: block;
 }
 
@@ -83,4 +83,29 @@
 .banners .controls-slider {
   bottom: 4.6rem;
   right: 11.6rem;
+}
+
+@media screen and (max-width:1024px) {
+  .banner {
+    padding-top: 7.2rem;
+  }
+
+  .banner-slider-item {
+    width: 85vw;
+  }
+
+  .banners .arrow-slider-left {
+    left: 1rem;
+
+  }
+
+  .banners .arrow-slider-right {
+    right: 1rem;
+
+  }
+
+  .banners .controls-slider {
+    right: 50%;
+    transform: translateX(50%);
+  }
 }
