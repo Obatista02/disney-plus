@@ -2,6 +2,7 @@
   align-items: center;
   display: flex;
   padding-top: 9.7rem;
+  position: relative;
   overflow: hidden;
 }
 
@@ -16,13 +17,6 @@
   padding: 0 1rem 3rem;
   position: relative;
 
-}
-
-.banner-slider-counter {
-  font-size: 2rem;
-  position: absolute;
-  top: 4rem;
-  left: 4rem;
 }
 
 .banner-slider-link {
@@ -105,6 +99,7 @@
   }
 
   .banners .controls-slider {
+    bottom: 4.2rem;
     right: 50%;
     transform: translateX(50%);
   }
