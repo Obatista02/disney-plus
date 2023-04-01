@@ -7,6 +7,7 @@
 
       /* COMPONENTES*/
       @import "../css/componentes/logo.css";
+      @import "../css/componentes/collection.css";
       @import "../css/componentes/userProfile.css";
       @import "../css/componentes/arrow-slider.css";
       @import "../css/componentes/controls-slider.css";
