@@ -14,7 +14,6 @@
 
 .movie-carousel {
   align-items: center;
-  justify-content: center;
   position: relative;
   display: flex;
 }
@@ -59,6 +58,7 @@
 }
 
 .movie-carousel .arrow-slider {
+  height: 100%;
   margin-top: -2.5rem;
   position: absolute;
   z-index: 2;
@@ -71,5 +71,27 @@
 
 .movie-carousel .arrow-slider-right {
   right: 3.6rem;
+
+}
+
+@media screen and (max-width: 1024px) {
+  .movie-carousel-item {
+    width: calc(85vw /2);
+
+  }
+
+  .colletion-title {
+    width: 85vw;
+  }
+
+  .movie-carousel .arrow-slider-left {
+    left: 1rem;
+
+  }
+
+  .movie-carousel .arrow-slider-right {
+    right: 1rem;
+
+  }
 
 }
