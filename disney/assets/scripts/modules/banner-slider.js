@@ -66,9 +66,33 @@ function backwardSlide(){
       }
 }
 
+function setArrowButtonsDisplay (){
+    if(state.currentSlideIndex === 0){
+      btnPrevius.style.display = 'none'
+    }else{
+      btnPrevius.style.display = 'block'
+    }
+    if(state.currentSlideIndex === sliderItem.length -1 ){
+      btnNext.style.display = 'none'
+    }else{
+      btnNext.style.display = 'block'
+    }
+}
+  const activeCurrentSlides = () =>{
+    sliderItem.forEach((slide, slideIndex) =>{
+      slide.classList.remove('active')
+      if(slideIndex == state.currentSlideIndex){
+          slide.classList.add('active')
+      }
+    })
+  }
+
+
 function setVisibleSlide(index){
-  state.currentSlideIndex= index
+  state.currentSlideIndex = index
    const position= getCenterPosition(index)
+    activeCurrentSlides()
+    setArrowButtonsDisplay()
     activeControlButton(index)
     AnimateTransition(true)
     activeImageTitle(index)
@@ -105,6 +129,7 @@ function onMouseUp(event){
         }else{
       setVisibleSlide(state.currentSlideIndex)
         }
+        state.movementPosition = 0
           slide.removeEventListener('mousemove', onMouseMove)
 }
 

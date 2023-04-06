@@ -6,18 +6,24 @@
   overflow: hidden;
 }
 
-.banner-slider {
-  display: flex;
-  position: relative;
-}
-
 .banner-slider-item {
   flex-shrink: 0;
+  opacity: 0.5;
   width: 90vw;
   padding: 0 1rem 3rem;
   position: relative;
 
 }
+
+.banner-slider {
+  display: flex;
+  position: relative;
+}
+
+.banner-slider-title.active {
+  opacity: 1;
+}
+
 
 .banner-slider-link {
   display: block;
@@ -59,18 +65,26 @@
 }
 
 .banners .arrow-slider {
+  height: 100%;
+  opacity: 0;
+  transition: opacity .3s;
   margin-top: -3rem;
   position: absolute;
   z-index: 2;
 }
 
-.banners .arrow-slider-left {
-  left: 3.6rem;
+.banners .arrow-slider:hover {
+  opacity: 1;
+}
 
+.banners .arrow-slider-left {
+  left: 0;
+  padding: 0 3.6rem;
 }
 
 .banners .arrow-slider-right {
-  right: 3.6rem;
+  padding: 0 3.6rem;
+  right: 0rem;
 
 }
 
@@ -89,12 +103,14 @@
   }
 
   .banners .arrow-slider-left {
-    left: 1rem;
+    padding: 0 1rem;
+    left: 0rem;
 
   }
 
   .banners .arrow-slider-right {
-    right: 1rem;
+    padding: 0 1rem;
+    right: 0rem;
 
   }
 
