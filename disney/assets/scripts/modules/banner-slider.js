@@ -28,7 +28,7 @@ function activeControlButton(index){
 }
 
 function activeImageTitle(index){
-    imgTitles.forEach(function(item){
+    imgTitles.forEach(function(item){ 
       item.classList.remove('active')
     })
     const imgTitle = imgTitles[index]

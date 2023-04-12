@@ -17,6 +17,7 @@
       @import "../css/layout/header.css";
       @import "../css/layout/userMenu.css";
       @import "../css/layout/navMenu.css";
+      @import "../css/layout/footer.css";
 
       /* pages/home*/
       @import "../css/pages/home/banners.css";

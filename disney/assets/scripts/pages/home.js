@@ -35,6 +35,10 @@ import headerModule from '../modules/header.js'
         movieCarouselListElement.innerHTML += MovieCarouselItem(movie)
       }
     }
+    headerModule().init()
+    bannerSliderModule().init()
+    collectionModule().init()
+
 }
 
 export default Home
