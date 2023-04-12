@@ -1,7 +1,7 @@
 export const getHomeContent = () =>{
 
     return new Promise((resolve, reject) =>{
-      fetch('/disney/content/data.json')
+      fetch('../../../../content/data.json')
       .then((response) => {
         return response.json()
         })

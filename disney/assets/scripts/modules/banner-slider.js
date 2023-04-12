@@ -1,4 +1,5 @@
-const sliderItem = document.querySelectorAll('[data-banner="item"]')
+const bannerSliderModule= () =>{
+  const sliderItem = document.querySelectorAll('[data-banner="item"]')
 const slider = document.querySelector('[data-banner="slider"]')
 const btnNext = document.querySelector('[data-banner="btn-next"]')
 const btnPrevius  = document.querySelector('[data-banner="btn-previous"]')
@@ -199,6 +200,9 @@ function init(){
   setVisibleSlide(2)
   setListeners()
 }
-export default{
+return{
   init
 }
+}
+export default bannerSliderModule
+

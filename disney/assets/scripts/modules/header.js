@@ -1,3 +1,4 @@
+const headerModule = () =>{
 const header = document.querySelector('[data-header]')
 const openNAvSubMenu = document.querySelector('[data-open-navSubMenu]')
 const navSubMenu = document.querySelector('[data-navSubMenu]')
@@ -34,6 +35,9 @@ function init(){
   setListeners()
 }
 
-export default{
+return{
   init
 }
+}
+
+export default headerModule

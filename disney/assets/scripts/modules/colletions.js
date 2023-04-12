@@ -1,4 +1,5 @@
-const collections = document.querySelectorAll('[data-carousel="colletion"]')
+const collectionModule = () =>{
+  const collections = document.querySelectorAll('[data-carousel="colletion"]')
 const collectionData = []
 let currentCollectionIndex = 0
 let itemsPerSlide = 5
@@ -225,6 +226,9 @@ const init = () =>{
           setVisibleSlide(0)
     })  
 }
-export default{
+return{
   init
 }
+}
+export default collectionModule
+

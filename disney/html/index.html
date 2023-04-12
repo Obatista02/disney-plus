@@ -90,7 +90,24 @@
               <span class="user-profile-title">Guilherme</span>
             </div>
           </div>
-          <ul class="user-menu-profiles show-hover"></ul>
+          <ul class="user-menu-profiles show-hover" data-userMenu="user-profiles"></ul>
+
+          <ul class="user-menu-options show-hover">
+            <li class="user-menu-item ">
+              <a href="/" class="user-menu-link">Editar Perfis</a>
+            </li>
+            <li class="user-menu-item">
+              <a href="/" class="user-menu-link">Configurações do Aplicativo</a>
+            </li>
+            <li class="user-menu-item">
+              <a href="/" class="user-menu-link">Conta</a>
+            </li>
+            <li class="user-menu-item">
+              <a href="/" class="user-menu-link">Ajuda</a>
+            </li>
+            <li class="user-menu-item">
+              <a href="/" class="user-menu-link">Sair</a>
+            </li>
         </div>
       </nav>
     </header>
@@ -99,7 +116,7 @@
       <section class="banners">
         <button class="arrow-slider arrow-slider-left" data-banner="btn-previous"></button>
         <button class="arrow-slider arrow-slider-right" data-banner="btn-next"></button>
-        <div class="controls-slider"></div>
+        <div class="controls-slider" data-banner="controls"></div>
         <div class="banner-slider" data-banner="slider"></div>
       </section>
 
@@ -141,7 +158,7 @@
         </ul>
       </section>
 
-      <section class="colletions"></section>
+      <section class="colletions" data-carousel="colletions"></section>
     </main>
   </div>
   <script type="module" src="../assets/scripts/app.js"></script>
